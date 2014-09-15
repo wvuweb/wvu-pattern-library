@@ -1,0 +1,37 @@
+// WVU COLOR PALETTE 
+// -- Using hsl instead of hex - http://revoltpuppy.com/articles/39
+// -- Color converter used - http://hslpicker.com/
+// -- Need to have hex value fallback for IE8 - http://caniuse.com/#search=hsl
+//==================================================
+
+// Primary
+$wvu-gold: hsla(43, 87%, 50%, 1); // #eeb111
+$wvu-blue: hsla(207, 100%, 33%, 1); // #005daa
+$wvu-blue-dark: hsla(207, 100%, 24%, 1); // #00447c
+
+// Secondary
+$gold-light: hsla(47, 100%, 79%, 1); // #ffe894
+$blue-light: hsla(203, 44%, 74%, 1); // #a0c4da
+$blue-medium: hsla(202, 100%, 38%, 1); // #0079c1
+$purple: hsla(234, 56%, 35%, 1); // #27318b 
+$orange: hsla(17, 76%, 48%, 1); // #d9531e
+$orange-light: hsla(26, 91%, 54%, 1); // #f47b20
+$grey-blue-dark: hsla(204, 16%, 32%, 1); // #455560
+$grey-blue-medium: hsla(204, 15%, 42%, 1); // #5c6f7c
+
+// Tertiary
+$orange-dark: hsla(17, 76%, 42%, 1); // #bb471a
+$grey-blue-light: hsla(210, 25%, 73%, 1); // #abc
+$grey: hsla(0, 0%, 88%, 1); // #e0e0e0
+$blue-bright: hsla(210, 100%, 60%, 1); // #39f
+$blue-additional: hsla(210, 50%, 40%, 1); // #369
+$purple-bright: hsla(270, 100%, 40%, 1); // #60c
+
+// Additional Colors
+$red-dark: hsla(0, 86%, 37%, 1); // #ae0d0d
+$green: hsla(120, 57%, 28%, 1); // #1e6f1e
+
+// Double Abstraction
+$linkcolor: $wvu-blue;
+$linkhover: $wvu-gold;
+$linkvisited: $purple-bright;

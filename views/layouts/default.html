@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html class="ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+    <r:comment><!-- meta charset gets set automatically by CleanSlate --></r:comment>
+    <title><r:page:first_non_blank_attr names="title, name" /> | <r:site_name /> | West Virginia University</title>
+    <meta name="description" content="<r:page:meta_description />" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <r:include_stylesheet name="styles" />
+
+    <script type="text/javascript" src="http://fast.fonts.net/jsapi/fab0a2ef-9f52-4231-87e2-c556bf9c1993.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <!-- HTML5 Shiv is *required* for IE to recognize HTML5 tags. -->
+
+  </head>
+  <body class="<r:page:template:name /> page-<r:page:id />">
+
+    <header class="header">
+
+    </header><!-- /.header -->
+
+    <r:comment><!-- What are layouts and <r:yield />? http://goo.gl/DFAsPv --></r:comment>
+    <r:yield />
+
+    <r:partial name="layouts/browser-update-org--v1" theme="Code" />
+
+    <!-- Fix IE 8 and below so that media queries get supported -->
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+  </body>
+</html>

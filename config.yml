@@ -1,0 +1,17 @@
+name: Pattern Library
+description: Pattern Library is a collection of commonly used patterns for WVU websites. The purpose of Pattern Library is to make it easier for web designers to create fully accessible and responsive websites that follow modern web standards for HTML CSS and Javascript. Originally authored by Dustin Mazon.
+
+# CSS
+css: 
+  
+  # Turn CSS compression/minification on/off.
+  compress: false
+  
+# JavaScript options
+js:
+  
+  # Turn JavaScript compression/minification on/off
+  compress: false
+  
+  # Turn JavaScript mangling on/off.
+  mangle: false

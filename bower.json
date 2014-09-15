@@ -1,0 +1,21 @@
+{
+  "name": "pattern-library",
+  "version": "0.0.1",
+  "authors": [
+    "Dustin Mazon <dustin.mazon@mail.wvu.edu>"
+  ],
+  "description": "Bower packages for WVU Pattern Library.",
+  "main": "bower.json",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "svgeezy": "~1.0.0",
+    "normalize-css": "~3.0.1"
+  }
+}

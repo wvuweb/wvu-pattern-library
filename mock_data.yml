@@ -1,0 +1,39 @@
+livereload: false
+browsersync: true
+browsersync-data: |
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  script.setAttribute("defer", "defer");
+  script.type = 'text/javascript';
+  var src= '//HOST:3000/socket.io/socket.io.js';
+  script.src = src.replace(/HOST/g, location.hostname);
+  head.appendChild(script);
+
+  var head = document.getElementsByTagName('head')[0];
+  var script = document.createElement('script');
+  script.setAttribute("defer", "defer");
+  script.type = 'text/javascript';
+  var src= '//HOST:3000/browser-sync-client.1.3.5.js';
+  script.src = src.replace(/HOST/g, location.hostname);
+  head.appendChild(script);
+
+shared_themes:
+  layouts__masthead--v1: "code"
+  layouts__footer__contact--v1: "code"
+  layouts__footer__credits--v1: "code"
+  layouts__footer__icons--v1: "code"
+  layouts__browser-update-org--v1: "code"
+  typography: "pattern-library"
+
+editable_region:
+  masthead: |
+    <p>Description of the masthead.</p>
+  site-title: |
+    <p>Description of the site-title.</p>
+  typography: |
+    <p>Description of the typography.</p>
+  main__frontpage: |
+    <h1>HTML Ipsum Presents</h1>
+    <p>Hello</p>
+  wvu-footer: |
+    <p>Description of the typography.</p>
