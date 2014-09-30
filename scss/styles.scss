@@ -5,14 +5,16 @@
 
 // --Utilities--
 @import
+	"utilities/_helper-styles.scss",
   "utilities/_unit.scss",
   "utilities/_color.scss",
   "utilities/_grid.scss",
   "utilities/_typography.scss",
-  "utilities/_wireframe__label.scss";
+  "utilities/_wvu-wireframe.scss";
 
 // --Partials--
 @import
   "partials/_wvu-masthead.scss",
   "partials/_site-title.scss",
-  "partials/_wvu-footer__credits";
+  "partials/_wvu-footer__credits",
+  "partials/_wvu-footer__links";

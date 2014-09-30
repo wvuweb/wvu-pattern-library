@@ -1,0 +1,25 @@
+// WVU Wireframe Styles
+//==================================================
+
+.wvu-wireframe__label {
+	width: 100%;
+	margin: 0 auto $unit*3;	
+	clear: both;
+	border-bottom: solid 1px $grey;
+	font-size: $unit*2;
+	color: $grey-blue-medium;
+	padding: $unit*8 0 0 $unit*2;
+	letter-spacing: 1px;
+}
+
+.wvu-wireframe__description {
+	width: 100%;
+	margin: 0 auto $unit*3;	
+	clear: both;
+	border-bottom: solid 1px $grey;
+	font-size: $unit*2;
+	color: $grey-blue-medium;
+	background-color: mix($grey, #fff, 50%);
+	padding: $unit*8 0 0 $unit*2;
+	letter-spacing: 1px;
+}

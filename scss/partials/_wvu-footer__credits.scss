@@ -1,8 +1,9 @@
 // WVU Footer - Credits
 //==================================================
 
-.wvu-footer__credits { 
-  clear: left;
+.wvu-footer__credits {
+  font-size: 12px;
+  line-height: 1.66;
   float: left;
   padding-bottom: 13px;
   ul, p { 
@@ -28,12 +29,10 @@
   .wvu-footer__credits { 
     margin-left: 0; 
     margin-right: 0; 
-    width: 50%; 
-  }
-  .wvu-footer__credits { 
+    width: 50%;
     float: left;
     ul, p { 
       margin-bottom: 0; 
     }
-  } //.wvu-credits
-} // /@media (min-width: $grid-mq-tablet)
+  } //.wvu-footer__credits
+} // /@media (min-width: 48em)

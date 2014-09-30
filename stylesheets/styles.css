@@ -405,6 +405,64 @@ th {
   padding: 0;
 }
 
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
 body {
   font-family: 'Neue Helvetica W02', "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
   font-size: 18px;
@@ -488,13 +546,25 @@ sub {
   top: 0.4em;
 }
 
-.wireframe__label {
+.wvu-wireframe__label {
   width: 100%;
   margin: 0 auto 18px;
   clear: both;
   border-bottom: solid 1px #e0e0e0;
   font-size: 12px;
   color: #5b6e7b;
+  padding: 48px 0 0 12px;
+  letter-spacing: 1px;
+}
+
+.wvu-wireframe__description {
+  width: 100%;
+  margin: 0 auto 18px;
+  clear: both;
+  border-bottom: solid 1px #e0e0e0;
+  font-size: 12px;
+  color: #5b6e7b;
+  background-color: #efefef;
   padding: 48px 0 0 12px;
   letter-spacing: 1px;
 }
@@ -578,7 +648,8 @@ ul.wvu-masthead__links a:hover {
 }
 
 .wvu-footer__credits {
-  clear: left;
+  font-size: 12px;
+  line-height: 1.66;
   float: left;
   padding-bottom: 13px;
 }
@@ -605,12 +676,78 @@ ul.wvu-masthead__links a:hover {
     margin-left: 0;
     margin-right: 0;
     width: 50%;
-  }
-
-  .wvu-footer__credits {
     float: left;
   }
   .wvu-footer__credits ul, .wvu-footer__credits p {
     margin-bottom: 0;
+  }
+}
+.wvu-footer__links li {
+  list-style-type: none;
+  display: inline;
+}
+.wvu-footer__links li:before {
+  content: '|';
+  padding-right: 3px;
+}
+.wvu-footer__links li:first-child:before {
+  content: '';
+  padding-right: 0;
+}
+.wvu-footer__links li .wvu-footer__icons {
+  float: left;
+  padding-bottom: 13px;
+}
+.wvu-footer__links li .wvu-footer__icons ul {
+  clear: both;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.wvu-footer__links li .wvu-footer__icons li {
+  display: inline;
+  margin: 0;
+}
+.wvu-footer__links li .wvu-footer__social {
+  padding: 3px 0;
+  float: left;
+}
+.wvu-footer__links li .wvu-footer__social li {
+  float: left;
+}
+.wvu-footer__links li .wvu-footer__social li:last-child a {
+  margin-right: 0;
+}
+.wvu-footer__links li .wvu-footer__social a {
+  height: 24px;
+  margin: 0;
+  float: left;
+  width: 24px;
+  padding-left: 0;
+  padding-top: 5px;
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+.wvu-footer__links li .wvu-footer__facebook {
+  background: url() no-repeat center center;
+}
+.wvu-footer__links li .wvu-footer__twitter {
+  background: url() no-repeat center center;
+}
+.wvu-footer__links li .wvu-footer__youtube {
+  background: url() no-repeat center center;
+}
+@media (min-width: 48em) {
+  .wvu-footer__links li .wvu-footer__icons {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+    float: right;
+  }
+  .wvu-footer__links li .wvu-footer__icons ul {
+    float: right;
   }
 }

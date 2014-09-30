@@ -1,0 +1,78 @@
+// WVU Footer - Links
+//==================================================
+
+.wvu-footer__links li {
+  list-style-type: none; 
+  display: inline;
+  &:before { 
+    content: '|'; 
+    padding-right: 3px; 
+  }
+  &:first-child:before { 
+    content: '';
+    padding-right: 0; 
+} // .wvu-footer__links
+
+.wvu-footer__icons {
+  float: left; 
+  padding-bottom: 13px; 
+  ul { 
+    clear: both; 
+    margin-top: 0; 
+    margin-bottom: 0; 
+    padding-left: 0; 
+    list-style-type: none; 
+  }
+  li { 
+    display: inline; 
+    margin: 0; 
+  }
+} //.wvu-footer__icons
+
+.wvu-footer__social {
+  padding: 3px 0; 
+  float: left;
+  li { 
+    float: left; 
+    &:last-child a { 
+      margin-right: 0; 
+    }
+  }
+  a { 
+    height: 24px; 
+    margin: 0; 
+    float: left; 
+    width: 24px; 
+    padding-left: 0; 
+    padding-top: 5px; 
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;; 
+  }
+} //.wvu-footer__social
+
+.wvu-footer__facebook {
+  background: url() no-repeat center center;
+} //.wvu-facebook
+
+.wvu-footer__twitter {
+  background: url() no-repeat center center;
+} //.wvu-twitter
+
+.wvu-footer__youtube {
+  background: url() no-repeat center center;
+} //.wvu-youtube
+
+// ~Tablet through Desktop
+@media (min-width: 48em) {
+  .wvu-footer__icons { 
+    margin-left: 0; 
+    margin-right: 0; 
+    width: 50%; 
+    float: right;
+  }
+  .wvu-footer__icons ul { 
+    float: right; }
+  }
+} 
